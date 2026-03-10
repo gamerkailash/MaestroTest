@@ -1,0 +1,24 @@
+appId: com.google.android.apps.maps
+---
+- launchApp:
+    clearState: true
+
+- tapOn: Search here
+- inputText: san francisco
+- tapOn: San Francisco
+- tapOn: CA
+
+- swipe:
+    from:
+      id: 'com.google.android.apps.maps:id/header'
+    direction: UP
+
+- scrollUntilVisible:
+    element: See all
+    direction: RIGHT
+    speed: 90
+
+- tapOn: See all
+- tapOn: Videos
+
+- assertVisible: '[0-9]+:[0-9][0-9]'
