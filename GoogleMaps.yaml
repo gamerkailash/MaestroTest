@@ -16,7 +16,7 @@ appId: com.google.android.apps.maps
 - scrollUntilVisible:
     element: See all
     direction: RIGHT
-    speed: 90
+    speed: 95
 
 - tapOn: See all
 - tapOn: Videos
